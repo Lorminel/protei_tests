@@ -92,10 +92,10 @@ ____
 ### По результатам каждого запуска тестов в Jenkins создается Allure отчет с подробной информацией по каждому пройденному тесту.
 
 ### Основная страница отчета
-![This is an image](/design/images/allure report2.png)
+![This is an image](/design/images/allure_report2.png)
 
 ### Тест-кейсы
-![This is an image](/design/images/allure report.png)
+![This is an image](/design/images/allure_report.png)
 
 ____
 <a id="allure-testops"></a>
@@ -103,13 +103,13 @@ ____
 ### Полная статистика по прохождению тест-кейсов, отчёты и приложения к ним хранятся в Allure TestOps(запрос доступа admin@qa.guru).
 
 ### *Allure TestOps Dashboard*
-![This is an image](/design/images/allure dashboard.png)
+![This is an image](/design/images/allure_dashboard.png)
 
 ### *Автоматизированные тест-кейсы*
-![This is an image](/design/images/allure auto.png)
+![This is an image](/design/images/allure_auto.png)
 
 ### *Ручные тест-кейсы*
-![This is an image](/design/images/allure manual.png)
+![This is an image](/design/images/allure_manual.png)
 
 ____
 <a id="jira"></a>
@@ -126,4 +126,5 @@ ____
 ____
 <a id="video"></a>
 ## <img alt="Selenoid" height="25" src="design/icons/Selenoid.png" width="25"/></a> Пример видеозаписи прохождения теста
-![This is an image](design/images/video.gif)
+
+<img title="Selenoid Video" src="design/images/video.gif" width="550" height="350"  alt="video">   
