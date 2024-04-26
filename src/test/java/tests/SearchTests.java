@@ -49,9 +49,9 @@ public class SearchTests extends TestBase {
     @Story("Выполнение поиска по сайту")
     @Owner("dtsvetkova")
     @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("Проверка работы поиска по сайту после ввода запроса {0} на главной странице")
+    @DisplayName("Проверка работы поиска по сайту после ввода запроса на главной странице")
     @Tag("protei_tests")
-    @ParameterizedTest(name = "Поиск по слову {0}")
+    @ParameterizedTest
     void searchByTextFromMainPage(String searchData) {
         mainPage.openPage()
                 .openSearchBar()
