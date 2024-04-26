@@ -15,9 +15,6 @@ public class ContactsPage {
 
     private final SelenideElement contactsTitle = $(".paragraph-contact__field-title"),
             feedbackButton = $(".paragraph-contact__field-link"),
-            addressField = $(".paragraph-contact__field-address paragraph-contact__field-address--label-inline"),
-            phoneField = $(".paragraph-contact__field-phone paragraph-contact__field-phone--label-inline"),
-            emailField = $(".paragraph-contact__field-email paragraph-contact__field-email--label-inline"),
             contactsBlock = $(".paragraph-contact__main");
 
     @Step("Открыть страницу контактов")

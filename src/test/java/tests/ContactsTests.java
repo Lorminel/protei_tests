@@ -1,5 +1,6 @@
 package tests;
 
+import data.Contacts;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -7,7 +8,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
 import pages.ContactsPage;
-import data.Contacts;
 
 @Feature("Контакты и обратная связь")
 public class ContactsTests extends TestBase {

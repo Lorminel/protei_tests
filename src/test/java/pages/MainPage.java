@@ -71,13 +71,6 @@ public class MainPage {
         return this;
     }
 
-    @Step
-    public MainPage changeMapTab() {
-
-
-        return this;
-    }
-
     @Step("Проверить, что после закрытия строки поиска пользователь возвращается на главную страницу")
     public MainPage checkSearchInputIsClosed() {
         searchInput.shouldNotBe(visible);
