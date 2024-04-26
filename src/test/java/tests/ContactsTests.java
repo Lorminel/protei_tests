@@ -32,7 +32,7 @@ public class ContactsTests extends TestBase {
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверить, в каждом поле контактов указано соответствующее значение")
     @Tag("protei_tests")
-    @ParameterizedTest
+    @ParameterizedTest(name = "Поле {0}")
     void requiredFeedbackFormFieldsTest(Contacts contacts) {
         contactsPage.openPage()
                 .checkContacts(contacts.getLabel(), contacts.getContent());
