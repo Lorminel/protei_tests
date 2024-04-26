@@ -29,7 +29,7 @@ public class ContactsTests extends TestBase {
     @EnumSource(Contacts.class)
     @Story("Контакты на сайте")
     @Owner("dtsvetkova")
-    @Severity(SeverityLevel.CRITICAL)
+    @Severity(SeverityLevel.NORMAL)
     @DisplayName("Проверить, в каждом поле контактов указано соответствующее значение")
     @Tag("protei_tests")
     @ParameterizedTest(name = "(Поле {0})")
