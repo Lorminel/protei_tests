@@ -30,7 +30,7 @@ public class SearchTests extends TestBase {
 
     @Story("Закрытие строки поиска")
     @Owner("dtsvetkova")
-    @Severity(SeverityLevel.CRITICAL)
+    @Severity(SeverityLevel.NORMAL)
     @DisplayName("Проверка закрытия строки поиска при нажатии на любое место на странице")
     @Tag("protei_tests")
     @Test
