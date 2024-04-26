@@ -51,7 +51,7 @@ public class SearchTests extends TestBase {
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка работы поиска по сайту после ввода запроса на главной странице")
     @Tag("protei_tests")
-    @ParameterizedTest(name = "Запрос {0}")
+    @ParameterizedTest(name = "(Запрос {0})")
     void searchByTextFromMainPage(String searchData) {
         mainPage.openPage()
                 .openSearchBar()
