@@ -8,6 +8,8 @@ import pages.AboutCompanyPage;
 import pages.MainPage;
 import pages.ProductsPage;
 
+@Owner("dtsvetkova")
+@Tag("protei_tests")
 @Feature("Главная страница")
 public class MainPageTests extends TestBase {
 
@@ -16,10 +18,8 @@ public class MainPageTests extends TestBase {
     AboutCompanyPage aboutCompanyPage = new AboutCompanyPage();
 
     @Story("Переход к другим разделам сайта с главной страницы")
-    @Owner("dtsvetkova")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка перехода на страницу продуктов компании с главной страницы сайта")
-    @Tag("protei_tests")
     @Test
     void openProductsFromMainPageTest() {
         mainPage.openPage()
@@ -28,10 +28,8 @@ public class MainPageTests extends TestBase {
     }
 
     @Story("Переход к другим разделам сайта с главной страницы")
-    @Owner("dtsvetkova")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка перехода на страницу информации о компании с главной страницы сайта")
-    @Tag("protei_tests")
     @Test
     void openCompanyInfoFromMainPageTest() {
         mainPage.openPage()

@@ -9,6 +9,8 @@ import org.junit.jupiter.params.provider.ValueSource;
 import pages.MainPage;
 import pages.SearchContentPage;
 
+@Owner("dtsvetkova")
+@Tag("protei_tests")
 @Feature("Поиск по сайту")
 public class SearchTests extends TestBase {
 
@@ -16,10 +18,8 @@ public class SearchTests extends TestBase {
     SearchContentPage searchContentPage = new SearchContentPage();
 
     @Story("Закрытие строки поиска")
-    @Owner("dtsvetkova")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка закрытия строки поиска при нажатии на соответствующую кнопку")
-    @Tag("protei_tests")
     @Test
     void searchInputClosedByButtonTest() {
         mainPage.openPage()
@@ -29,10 +29,8 @@ public class SearchTests extends TestBase {
     }
 
     @Story("Закрытие строки поиска")
-    @Owner("dtsvetkova")
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Проверка закрытия строки поиска при нажатии на любое место на странице")
-    @Tag("protei_tests")
     @Test
     void searchInputClosedByPageClickTest() {
         mainPage.openPage()
@@ -47,10 +45,8 @@ public class SearchTests extends TestBase {
             "USSD",
             "Кодеки"})
     @Story("Выполнение поиска по сайту")
-    @Owner("dtsvetkova")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка работы поиска по сайту после ввода запроса на главной странице")
-    @Tag("protei_tests")
     @ParameterizedTest(name = "(Запрос {0})")
     void searchByTextFromMainPage(String searchData) {
         mainPage.openPage()

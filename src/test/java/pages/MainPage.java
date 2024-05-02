@@ -14,10 +14,7 @@ public class MainPage {
 
     SearchBarComponent searchBarComponent = new SearchBarComponent();
     private final SelenideElement mainPageBlock = $(".block-maintitr"),
-            searchInput = $("#edit-search--2"),
-            productsButton = $(".block-maintitr__content"),
-            companyButton = $(".block-content-front-titr-full__field-links-item[href='https://protei.ru/company']"),
-            mapTab = $("svgMap__tab");
+            searchInput = $("#edit-search--2");
 
 
     @Step("Открыть главную страницу")
