@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class WebDriverProvider {
 
-    public static void config () {
+    public static void config() {
 
         WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
 
@@ -21,7 +21,7 @@ public class WebDriverProvider {
         Configuration.browserVersion = config.getBrowserVersion();
         Configuration.pageLoadStrategy = "eager";
 
-        if(System.getProperty("env") == "remote"){
+        if (System.getProperty("env") == "remote") {
             Configuration.remote = "https://user1:1234@" + config.getRemoteUrl() + "/wd/hub";
         }
 
